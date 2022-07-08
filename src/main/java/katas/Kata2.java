@@ -19,7 +19,7 @@ public class Kata2 {
         List<Movie> movies = DataUtil.getMovies();
 
         return movies.stream().map(
-                        peli -> peli.getRating())
+                        peliculas -> peliculas.getRating())
                 .filter(raiting -> raiting == 5.0).map(valor -> valor.intValue())
                 .collect(Collectors.toList());
     }
