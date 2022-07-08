@@ -25,6 +25,6 @@ public class Kata5 {
                 .map(movie -> movie.getRating()).get();
 
         return rating;
-    }
+        }
     }
 

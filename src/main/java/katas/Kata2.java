@@ -17,12 +17,10 @@ import java.util.stream.Collectors;
 public class Kata2 {
     public static List<Integer> execute() {
         List<Movie> movies = DataUtil.getMovies();
-        List<Integer> pelis;
-
-        ImmutableList.of(1, 2, 3);
 
         return movies.stream().map(
                         peli -> peli.getRating())
-                .filter(raiting -> raiting == 5.0).map(valor -> valor.intValue()).collect(Collectors.toList());
+                .filter(raiting -> raiting == 5.0).map(valor -> valor.intValue())
+                .collect(Collectors.toList());
     }
 }
